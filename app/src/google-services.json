@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "174140020228",
+    "firebase_url": "https://worida1-default-rtdb.firebaseio.com",
+    "project_id": "worida1",
+    "storage_bucket": "worida1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174140020228:android:54854f6dba2de569258751",
+        "android_client_info": {
+          "package_name": "com.example.wordia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg7L79AwPfECSj8mHhSqYKV9uFvrSmjss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
