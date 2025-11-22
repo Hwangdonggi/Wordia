@@ -28,6 +28,7 @@
             android:contentDescription="@string/app_name"
             android:padding="8dp" />
 
+
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
@@ -103,7 +104,6 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-
     <!-- 버튼 영역 -->
     <LinearLayout
         android:id="@+id/btnGroup"
@@ -118,25 +118,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+        <!-- 단어 퀴즈 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="단어 퀴즈 시작" />
+
+        <!-- 로그인 -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:text="로그인"
-            android:textColor="#FFFFFF"
-            android:textColorHighlight="#000000"
-            android:textColorLink="#009688" />
+            android:textColor="#FFFFFF" />
 
+        <!-- 회원가입 -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSignup"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="회원가입"
-            android:textColor="#FFFFFF"
-            />
+            android:textColor="#FFFFFF" />
+
+        <!-- 🔥 로그인 시 나타나는 로그아웃 버튼 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
     </LinearLayout>
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

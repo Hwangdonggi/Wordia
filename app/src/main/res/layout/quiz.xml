@@ -1,6 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Wordia - 단어 퀴즈"
+            android:textStyle="bold" android:textSize="20sp" android:textColor="#111111" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:layout_marginTop="8dp" android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="_____ the blank."
+            android:textSize="18sp" android:textColor="#111111"
+            android:layout_marginTop="18dp" />
+
+        <RadioGroup
+            android:id="@+id/rgOptions"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/opt1" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Option 1" />
+
+            <RadioButton
+                android:id="@+id/opt2" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Option 2" />
+
+            <RadioButton
+                android:id="@+id/opt3" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Option 3" />
+
+            <RadioButton
+                android:id="@+id/opt4" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="Option 4" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="제출"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnNext" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="다음 문제"
+            android:layout_marginTop="10dp" android:enabled="false" />
+
+        <TextView
+            android:id="@+id/tvExplanation"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="" android:textColor="#555555"
+            android:layout_marginTop="14dp" />
+
+        <Button
+            android:id="@+id/btnBackToMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메인으로 돌아가기"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
